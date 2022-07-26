@@ -1,0 +1,27 @@
+.navbar {
+    height: 100px;
+}
+
+.carousel-item img {
+    min-height: 600px;
+    max-height: 600px;
+}
+
+.card-img-top{
+    max-height: 350px;
+    padding: 20px;
+}
+
+#yellow-box{
+    background-color: #fcc203;
+    height: 200px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#gray-box{
+    background-color: #ebebeb;
+    height: 500px;
+    width: 100%;
+}
+
