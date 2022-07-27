@@ -12,14 +12,58 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
     <style>
-        @media screen and (max-width:770px){
-            body{
+        @media (min-width: 1000px) and (max-width:1920px) {
+            body {
                 background-color: white;
             }
-            .main_img{
+
+            img.main_img {
                 width: 500px;
+                height: 500px;
             }
-            
+
+            .home_text {
+                margin-top: 50px;
+                margin-left: 100px;
+            }
+            p.text-white{
+                padding-left: 90px;
+            }
+        }
+
+        @media screen and (max-width:770px) {
+            body {
+                background-color: white;
+            }
+
+            .carousel {
+                height: 300px;
+            }
+
+            .navbar {
+                height: 120px;
+            }
+
+            img.main_img {
+                width: 300px;
+                height: 300px;
+            }
+
+            .home_text {
+                width: 390px;
+                padding-top: 70px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            footer {
+                width: 390px;
+                height: 200px;
+            }
+
+            p.text-white{
+                padding-left: 80px;
+            }
         }
     </style>
 </head>
@@ -40,7 +84,7 @@
                         <a class="nav-link active" aria-current="page" href="home.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">Introduction</a>
+                        <a class="nav-link active" href="about.html">Introduction</a>
                     </li>
                 </ul>
             </div>
@@ -59,13 +103,13 @@
 
         <div class="carousel-inner" style="text-align: center;">
             <div class="carousel-item active">
-                <img class="main_img"src="./static/해달프렌즈.png" alt="..." style="padding: 20px;">
+                <img class="main_img" src="./static/해달프렌즈.png" alt="...">
             </div>
             <div class="carousel-item">
-                <img class="main_img"src="./static/해달이.png" alt="..." style="padding: 20px;">
+                <img class="main_img" src="./static/해달이.png" alt="...">
             </div>
             <div class="carousel-item">
-                <img class="main_img"src="./static/김두근.png" alt="..." style="padding: 20px;">
+                <img class="main_img" src="./static/김두근.png" alt="...">
             </div>
         </div>
 
@@ -80,8 +124,7 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-
-    <div style="padding-top: 100px; text-align: center;">
+    <div class="home_text">
         <h3>🦦Haedal Friends💛</h3>
         <p>안녕하세요! 해달 프렌즈입니다!
             <br> 여러분, 코딩이 어렵고 힘들게만 느껴지시나요? 딱딱한 컴퓨터 언어라고만 느껴지시나요?
@@ -91,27 +134,18 @@
         </p>
     </div>
 
+
     <footer class="py-5 bg-dark">
         <div class="row">
             <div class="col">
-                <div class="container" style="margin-left: 300px;">
+                <div class="container">
                     <img src="./static/haedalrogo_gibonhyeong_negative.png" style="width: 80px; height:60px;" alt="">
                     <h3 class="text-white" style="display: inline;">Haedal Friends</h3><br>
-                    <p class="text-white" style="margin-left: 15px;">대구광역시 중구 국채보상로 512 하늘빌딩 B1 <br>053-255-0512</p>
-                    <p class="text-white " style="margin-left: 15px;"">Copyright © Haedal Friends</p>
+                    <p class="text-white">Copyright © Haedal Friends</p>
                 </div>
             </div>
-            <div class=" col">
-                    <p class="m-0 text-white">Instagram <img src="./static/instagramlogo_negative-removebg-preview.png"
-                            onclick="location='https://www.instagram.com/haedal_toon/'" alt="" width="100px"></p>
-                    <p class="m-0 text-white">Haedal Programming <img
-                            src="./static/internet_logo-removebg-preview_negative.png"
-                            onclick="location='http://haedal.io/'" alt="" width="40px" style="margin-left: 10px;"></p>
-
-                </div>
-            </div>
+        </div>
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
